@@ -65,6 +65,19 @@
   animation: blink 4s infinite;
 }
 
+@-webkit-keyframes powerOn {
+  0% {
+    color: rgb(61, 61, 61);
+  }
+  50% {
+    color: rgb(142, 253, 77);
+  }
+
+  100% {
+    color: rgb(133, 255, 62);
+  }
+}
+
 @keyframes powerOn {
   0% {
     color: rgb(61, 61, 61);
@@ -75,6 +88,24 @@
 
   100% {
     color: rgb(133, 255, 62);
+  }
+}
+
+@-webkit-keyframes fadeInAndOut {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  70% {
+    translate: 0rem;
+  }
+  95% {
+    translate: 0 -100%;
+  }
+  100% {
+    opacity: 100%;
   }
 }
 
@@ -96,6 +127,23 @@
   }
 }
 
+@-webkit-keyframes blink {
+  0% {
+    opacity: 100%;
+  }
+  25% {
+    opacity: 30%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  75% {
+    opacity: 30%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
 @keyframes blink {
   0% {
     opacity: 100%;
@@ -111,6 +159,54 @@
   }
   100% {
     opacity: 100%;
+  }
+}
+
+@-webkit-keyframes glowing {
+  0% {
+    opacity: 30%;
+    color: rgb(133, 255, 62);
+  }
+  9% {
+    color: rgb(182, 182, 182);
+  }
+  10% {
+    opacity: 50%;
+  }
+
+  15% {
+    opacity: 100%;
+  }
+
+  20% {
+    opacity: 30%;
+  }
+
+  25% {
+    opacity: 100%;
+  }
+
+  30% {
+    opacity: 30%;
+    color: rgb(184, 184, 184);
+  }
+
+  35% {
+    opacity: 100;
+  }
+
+  49% {
+    color: rgb(184, 184, 184);
+  }
+
+  50% {
+    color: rgb(133, 255, 62);
+  }
+  55% {
+    color: rgb(184, 184, 184);
+  }
+  100% {
+    color: rgb(184, 184, 184);
   }
 }
 
@@ -162,7 +258,7 @@
   }
 }
 
-@keyframes fade {
+@-webkit-keyframes fade {
   0% {
     opacity: 10%;
   }
@@ -172,5 +268,7 @@
 }
 
 .turned {
+  -webkit-animation: fade 0.5s ease-in;
+  -moz-animation: fade 0.5s ease-in;
   animation: fade 0.5s ease-in;
 }
