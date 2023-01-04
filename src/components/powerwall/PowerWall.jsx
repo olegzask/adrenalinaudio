@@ -24,7 +24,7 @@ export const PowerWall = () => {
         showPage ? showPage.classList.add("turned") : null;
         showPage ? (showPage.style.display = "block") : null;
         footer.style.display = "block";
-      }, 1900);
+      }, 1800);
       return;
     }
   };
