@@ -17,27 +17,30 @@
 
 .service-link-container {
   margin: 0;
-  margin-top: 0.8rem;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   gap: 0.2rem;
 }
 
 .service-name {
+  margin: 0;
+  margin-bottom: 1rem;
   font-size: 1.5rem;
 }
 
 .service-link {
   text-decoration: none;
   color: rgb(133, 255, 62);
-  font-size: 1rem;
+  font-size: 0.7rem;
   display: flex;
   align-items: center;
   gap: 0.2rem;
 }
 
 .servicecard-right-side {
-  width: 35%;
+  width: 40%;
 }
 
 .service-img {
@@ -45,5 +48,5 @@
 }
 
 .service-btn {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
