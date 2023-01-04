@@ -34,7 +34,7 @@ export const PowerWall = () => {
       <div className="power-logo-container">
         <img className="adren-logo" src="logos/adrenalin_logo.png" alt="" />
         <div onClick={powerOn} className="element power-logo">
-          <FaPowerOff id="power" className="" />
+          <FaPowerOff id="power" />
         </div>
 
         <h3 id="power-header" className="power-logo-header blinking">

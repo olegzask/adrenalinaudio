@@ -8,7 +8,7 @@ export default function Video() {
         className="main-video"
         src="videos/vid2.mp4"
         autoPlay="autoplay"
-        muted
+        muted={true}
         loop
       />
     </div>
