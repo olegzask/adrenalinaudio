@@ -40,19 +40,6 @@
   text-align: center;
 }
 
-@keyframes powerOn {
-  0% {
-    color: rgb(61, 61, 61);
-  }
-  50% {
-    color: rgb(142, 253, 77);
-  }
-
-  100% {
-    color: rgb(133, 255, 62);
-  }
-}
-
 @keyframes fadeInAndOut {
   0% {
     opacity: 1;
@@ -143,6 +130,19 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes powerOn {
+  0% {
+    color: rgb(61, 61, 61);
+  }
+  50% {
+    color: rgb(142, 253, 77);
+  }
+
+  100% {
+    color: rgb(133, 255, 62);
   }
 }
 

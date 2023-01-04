@@ -9,6 +9,7 @@ export default function Video() {
         src="videos/vid2.mp4"
         autoPlay="autoplay"
         muted={true}
+        playsInline
         loop
       />
     </div>
