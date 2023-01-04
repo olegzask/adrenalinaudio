@@ -6,7 +6,7 @@
   background-color: rgb(0, 0, 0);
   color: rgb(207, 207, 207);
   font-size: 5rem;
-  display: block;
+  display: flex;
   align-items: center;
   justify-content: center;
   z-index: 10;
@@ -30,7 +30,6 @@
   margin-bottom: 1rem;
   cursor: pointer;
   font-size: 15rem;
-  color: rgb(61, 61, 61);
   border-radius: 100%;
 }
 
