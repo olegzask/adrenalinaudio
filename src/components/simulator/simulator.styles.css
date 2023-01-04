@@ -1,0 +1,83 @@
+#simulator-main {
+  position: relative;
+  top: 4.5rem;
+}
+
+.simulator-box {
+  margin-bottom: 3rem;
+  background-color: white;
+  position: relative;
+}
+
+.simulator-selector {
+  display: flex;
+  margin-bottom: 1rem;
+  width: 100%;
+  height: auto;
+  flex-direction: row;
+  background-color: black;
+  color: white;
+  text-align: center;
+  position: relative;
+  z-index: -1;
+}
+
+.decider {
+  margin: 0 auto;
+  display: flex;
+  width: 90%;
+  justify-content: center;
+}
+
+.simulator-tint-header {
+  width: 50%;
+  font-size: 30px;
+  text-align: center;
+  justify-content: center;
+  padding: 17px;
+}
+
+.simulator-tint-header:hover {
+  cursor: pointer;
+  background-color: rgb(133, 255, 62);
+  color: black;
+}
+
+.header-clicked {
+  background-color: rgb(133, 255, 62);
+  color: black;
+}
+
+.simulator-ppf-header:hover {
+  cursor: pointer;
+  background-color: rgb(133, 255, 62);
+  color: black;
+}
+
+.simulator-ppf-header {
+  font-size: 30px;
+  width: 50%;
+  text-align: center;
+  padding: 17px;
+}
+
+@media screen and (max-width: 720px) {
+  .simulator-selector {
+    position: relative;
+    z-index: 1;
+  }
+
+  .simulator-box {
+    position: relative;
+    top: 20px;
+    margin-bottom: 5rem;
+  }
+
+  .simulator-ppf-header {
+    font-size: 1rem;
+  }
+
+  .simulator-tint-header {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,72 @@
+.contactform-container {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-top: 0.5rem solid rgb(133, 255, 62);
+}
+
+.contactform-header {
+  margin: 0;
+  margin-top: 1.5rem;
+  font-size: 2.2rem;
+}
+
+.contactform-header-two {
+  margin: 0;
+  font-size: 1.1rem;
+  color: rgb(68, 68, 68);
+}
+
+.form-input {
+  height: 2rem;
+  font-size: 1rem;
+  border-radius: 0.2rem;
+  border: 0.1rem solid rgb(187, 186, 186);
+}
+
+.form-input:focus {
+  outline: 0.1rem solid rgb(133, 255, 62);
+}
+
+.form-comment {
+  height: 5rem;
+  resize: none;
+  border-radius: 0.2rem;
+  font-family: "Lato";
+  font-size: 1rem;
+  border: 0.1rem solid rgb(187, 186, 186);
+}
+
+.form-comment:focus {
+  outline: 0.1rem solid rgb(133, 255, 62);
+}
+
+.submit-request {
+  cursor: pointer;
+  font-family: "Lato";
+  font-size: 1.1rem;
+  height: 2rem;
+  border-radius: 0.2rem;
+  background-color: white;
+  border: 0.1rem solid rgb(187, 186, 186);
+}
+
+.submit-request:hover {
+  transition: 0.1s ease-in;
+  background-color: rgb(133, 255, 62);
+  border: none;
+}
+
+.submit-request:focus {
+  transition: 0.1s ease-in;
+  border: none;
+  outline: none;
+  background-color: rgb(133, 255, 62);
+}
+
+.submit-request:active {
+  transition: 0.1s;
+  background-color: rgb(107, 206, 50);
+}

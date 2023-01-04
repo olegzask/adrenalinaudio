@@ -1,0 +1,26 @@
+.about-page-container {
+  margin: 0 auto;
+  width: 90%;
+  position: relative;
+  top: 6rem;
+  margin-bottom: 9rem;
+}
+
+.about-more-info {
+  margin: 0 auto;
+  width: 100%;
+  font-size: 1.2rem;
+  padding-top: 1.5rem;
+}
+
+.abt-header {
+  display: flex;
+  gap: 1rem;
+  font-size: 2rem;
+}
+
+.abt-btns-cnt {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}

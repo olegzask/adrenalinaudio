@@ -1,0 +1,187 @@
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.tint-card-left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.btns-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 1rem;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.btn-card {
+  width: 100%;
+  background-color: black;
+  border: none;
+}
+
+.tint-card-right {
+  width: 60%;
+}
+
+.card-header {
+  padding: 0 1rem;
+  background-color: black;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.card-img {
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.card-description {
+  color: black;
+  font-size: 1.1rem;
+  padding-bottom: 1rem;
+}
+
+.shade-header {
+  width: 100%;
+  margin: 0 auto;
+  color: rgb(41, 41, 41);
+  font-size: 1.5rem;
+}
+
+.tint-shades {
+  color: rgb(41, 41, 41);
+  font-size: 1.2rem;
+}
+
+.feature-g {
+  margin: 0 auto;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.feat-container-g {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.features-header {
+  color: rgb(41, 41, 41);
+  font-size: 2.5rem;
+  border-bottom: 1px solid white;
+}
+
+.feat-name {
+  color: rgb(41, 41, 41);
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.feat-description {
+  color: rgb(41, 41, 41);
+  font-size: 1.2rem;
+}
+
+.feature-icon {
+  font-size: 2rem;
+  color: rgb(133, 255, 62);
+}
+
+@media screen and (max-width: 720px) {
+  .card-container {
+    display: block;
+    width: 100%;
+    border-top: 0.1rem solid rgb(133, 255, 62);
+    padding-bottom: 2rem;
+    border-bottom: 0.1rem solid white;
+  }
+
+  .card-header {
+    width: 92%;
+    font-size: 1.9rem;
+    height: 2.5rem;
+  }
+
+  .tint-card-left {
+    width: 90%;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .shades-ctn {
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .shade-header {
+    font-size: 1.1rem;
+    margin: 0;
+    width: 55%;
+  }
+
+  .tint-shades {
+    width: 40%;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .btns-container {
+    width: 100%;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 0.1rem solid rgb(133, 255, 62);
+  }
+
+  .btn-card {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .tint-card-right {
+    margin: 0 auto;
+    width: 90%;
+    justify-content: center;
+  }
+
+  .features-header {
+    width: 100%;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+
+  .feat-name {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .feat-description {
+    font-size: 1rem;
+  }
+
+  .tint-btn {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,77 @@
+.careers-container {
+  margin: 0 auto;
+  width: 90%;
+  margin-bottom: 10rem;
+  position: relative;
+  top: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+}
+
+.careers-header {
+  font-size: 1.7rem;
+  text-align: center;
+  margin: 0;
+}
+
+.careers-header-two {
+  margin: 1rem 0;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.dep-btn-container {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.btn-dep {
+  display: block;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+  background-color: white;
+  border: 0.1rem solid rgb(221, 221, 221);
+  border-radius: 0.3rem;
+  width: 80%;
+  font-size: 0.8rem;
+  height: 2rem;
+  margin: 0.3rem auto;
+}
+
+.btn-dep:hover {
+  transition: 0.2s ease;
+  border: 0.1rem solid rgb(133, 255, 62);
+}
+
+.selected {
+  background-color: rgb(133, 255, 62);
+  border: none;
+}
+
+.inactive {
+  background-color: white;
+  border: none;
+  color: rgb(209, 207, 207);
+}
+
+.static {
+  color: rgb(133, 255, 62);
+  cursor: default;
+  border: none;
+  color: black;
+}
+
+.static:hover {
+  border: none;
+}
+
+#resetBtn {
+  cursor: pointer;
+  margin: 0;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,18 @@
+.video-container {
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.main-video {
+  width: 100%;
+}
+
+@media (max-width: 720px) {
+  .main-video {
+    width: auto;
+    height: 78vh;
+  }
+}

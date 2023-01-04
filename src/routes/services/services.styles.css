@@ -1,0 +1,19 @@
+.services-container {
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 7rem;
+  top: 6rem;
+  width: 90%;
+}
+
+.service-container-header {
+  margin: 0;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: rgb(133, 255, 62);
+}
+
+.our-services {
+  font-weight: 800;
+}

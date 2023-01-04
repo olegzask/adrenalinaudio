@@ -1,0 +1,71 @@
+.autotint-main-container {
+  margin: 0 auto;
+  margin-bottom: 9rem;
+  position: relative;
+  top: 6rem;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+}
+
+.autotint-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.tint-header {
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  font-size: 4rem;
+}
+
+.autotint-header {
+  font-size: 2.9rem;
+  padding-bottom: 1rem;
+  color: black;
+}
+
+.tint-description {
+  margin: 0;
+  font-size: 1rem;
+  color: black;
+  text-align: center;
+}
+
+.tint-topper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+@media screen and (max-width: 720px) {
+  .autotint-main-container {
+    width: 100%;
+    margin-bottom: 7rem;
+  }
+
+  .tint-description-lower {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .autotint-header {
+    font-size: 2rem;
+  }
+
+  .tint-topper {
+    padding-bottom: 0;
+  }
+
+  .tint-header {
+    font-size: 3.2rem;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,119 @@
+.footer-container {
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 3rem;
+  padding: 2rem 0;
+  border-top: 0.1rem solid rgb(133, 255, 62);
+}
+
+.direct-contact-container {
+  margin: 0;
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.footer-left-side {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.have-question {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+.ask-us-anything {
+  font-size: 1.4rem;
+  font-weight: 100;
+}
+
+.direct-link {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: rgb(133, 255, 62);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-right: auto;
+}
+
+.direct-link:hover {
+  transition: 0.2s;
+  color: rgb(96, 197, 37);
+}
+
+.footer-link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  margin: 0;
+  margin-right: auto;
+}
+
+.footer-link:hover {
+  transition: 0.3s;
+  color: rgb(83, 83, 83);
+}
+
+.footer-links-container {
+  margin: 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  gap: 0.7rem;
+}
+
+.footer-bottom {
+  margin: 0 auto;
+  width: 100%;
+  border-top: 0.1rem solid rgb(133, 255, 62);
+  align-items: center;
+}
+
+.footer-address {
+  margin: 1rem 0;
+  width: 100%;
+  font-size: 0.9rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.footer-address:hover {
+  transition: 0.3s;
+  color: rgb(63, 63, 63);
+}
+
+.social-media-icons {
+  margin: 0;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  color: rgb(133, 255, 62);
+}
+
+.phone-icon-footer {
+  font-size: 1.1rem;
+}
+
+.oleg {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(83, 83, 83);
+}

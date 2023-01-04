@@ -1,0 +1,208 @@
+.simulator-ppf-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.simulator-rightside {
+  width: 50%;
+  text-align: center;
+}
+
+.radio-buttons-container {
+  width: auto;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.yes-no {
+  display: flex;
+  gap: 10px;
+  margin-left: 30px;
+}
+
+.full-partial-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.fp-button {
+  background-color: lightgrey;
+  border: none;
+  opacity: 1;
+  cursor: pointer;
+  padding: 0.3rem;
+  border-radius: 0.2rem;
+}
+
+.fp-button:hover {
+  background-color: rgb(133, 255, 62);
+  color: black;
+}
+
+.button-inactive {
+  opacity: 0.5;
+}
+
+.button-selected {
+  background-color: rgb(133, 255, 62);
+  color: black;
+}
+
+.btn-ppf-simulator {
+  width: 100%;
+  background-color: white;
+  color: rgb(65, 30, 78);
+}
+
+.btn-ppf-simulator:hover {
+  color: white;
+}
+
+.opts-container {
+  display: flexbox;
+  justify-content: space-between;
+  width: 50%;
+  align-items: center;
+}
+.parts-container {
+  margin-top: 1rem;
+  text-align: right;
+}
+
+.part-container {
+  display: flex;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.part-name {
+  width: 50%;
+  font-size: 20px;
+}
+
+.price-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.price {
+  background-color: rgb(133, 255, 62);
+  color: black;
+  border-radius: 0.3rem;
+  width: 60%;
+  text-align: center;
+  padding: 5px 15px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.simulator-ppf-img {
+  width: 100%;
+}
+
+.images-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.part {
+  position: absolute;
+  margin: 0 auto;
+  width: 45%;
+  opacity: 0;
+  background: transparent;
+  transition-duration: 1s;
+}
+
+.checked {
+  opacity: 1;
+  transition-duration: 1s;
+}
+
+.checkbox {
+  width: 20px;
+  margin: 0;
+}
+
+@media screen and (max-width: 720px) {
+  .simulator-ppf-container {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0px;
+  }
+
+  .opts-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .simulator-ppf-img {
+    width: 100%;
+  }
+
+  .simulator-rightside {
+    margin: 0;
+    align-items: center;
+    width: 100%;
+  }
+
+  .radio-buttons-container {
+    width: 90%;
+  }
+
+  .parts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .part-container {
+    width: 100%;
+  }
+
+  .images-container {
+    width: 100%;
+  }
+
+  .part {
+    width: 90%;
+  }
+
+  .part-name {
+    font-size: 1.1rem;
+  }
+
+  .price-container {
+    width: 70%;
+    height: auto;
+  }
+
+  .btn-ppf-simulator {
+    width: 100%;
+    height: auto;
+    font-size: 1.2rem;
+  }
+
+  .price {
+    /* padding: 0px;
+    margin-bottom: 1rem;
+    text-align: center;
+    width: 100%;
+    font-size: 1.2rem;
+    height: 2.5rem; */
+    width: 100%;
+  }
+}
