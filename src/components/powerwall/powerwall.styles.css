@@ -6,7 +6,7 @@
   background-color: rgb(0, 0, 0);
   color: rgb(207, 207, 207);
   font-size: 5rem;
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
   z-index: 10;
