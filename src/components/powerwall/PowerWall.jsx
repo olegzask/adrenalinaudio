@@ -1,5 +1,4 @@
 import React, { useState, useContext, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { BooleanContext } from "../../store";
 import { FaPowerOff } from "react-icons/fa";
 import "./powerwall.styles.css";
