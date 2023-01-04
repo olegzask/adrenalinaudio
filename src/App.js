@@ -9,6 +9,7 @@ import Careers from "./routes/careers/Careers";
 import ContactUs from "./routes/contact/ContactUs";
 import Services from "./routes/services/Services";
 import RemoteStart from "./routes/remotestart/RemoteStart";
+import PaintProtection from "./routes/paintprotection/PaintProtection";
 import { Simulator } from "./components/simulator/simulator";
 
 const App = () => {
@@ -24,6 +25,10 @@ const App = () => {
         <Route path="contact" element={<ContactUs />} />
         <Route path="simulator" element={<Simulator />} />
         <Route path="services/remote-start" element={<RemoteStart />} />
+        <Route
+          path="services/paint-protection-film"
+          element={<PaintProtection />}
+        />
       </Route>
     </Routes>
   );

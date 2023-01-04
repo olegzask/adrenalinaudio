@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Booking from "../remotestart/Booking";
 import LinkComponent from "../../components/link/LinkComponent";
-import "./tint-card.styles.css";
+import "../autotint/tint-card.styles.css";
 
-export const TintCard = ({ options }) => {
+export const PpfCard = ({ options }) => {
   const { tintType, description, shades, features, img } = options;
 
   const [modal, setModal] = useState(false);
@@ -40,7 +40,7 @@ export const TintCard = ({ options }) => {
             }}
           />
           {!modal ? null : (
-            <Booking opts={{ rem: "Tint", txt: "Service", reset: setModal }} />
+            <Booking opts={{ rem: "PPF", txt: "Service", reset: setModal }} />
           )}
           <button onClick={showModal} className="remote-btn">
             BOOK NOW
