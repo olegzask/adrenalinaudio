@@ -12,7 +12,22 @@
   z-index: 10;
 }
 
+.power-logo-container {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.adren-logo {
+  margin: rem 0;
+  width: 60%;
+}
+
 .power-logo {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
   cursor: pointer;
   font-size: 15rem;
   color: rgb(61, 61, 61);

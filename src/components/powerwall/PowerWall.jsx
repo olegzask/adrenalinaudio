@@ -32,8 +32,13 @@ export const PowerWall = () => {
 
   return (
     <div id="power-wall" className="power-wall-container">
-      <div onClick={powerOn} className="power-logo-container">
-        <FaPowerOff id="power" className="power-logo element" />
+      <div className="power-logo-container">
+        <img className="adren-logo" src="logos/adrenalin_logo.png" alt="" />
+        <FaPowerOff
+          onClick={powerOn}
+          id="power"
+          className="power-logo element"
+        />
         <h3 id="power-header" className="power-logo-header blinking">
           {!pressed ? "Press to start..." : "Welcome!"}
         </h3>
