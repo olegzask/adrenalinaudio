@@ -25,7 +25,7 @@ export default function RemoteStart() {
   return (
     <div className="rs-main-container">
       <div className="rs-container">
-        <div className="tint-topper">
+        <div className="rs-topper">
           <h2 className="service-container-header tint-header rs-serv-header">
             REMOTE <span className="our-services">START</span>
           </h2>
