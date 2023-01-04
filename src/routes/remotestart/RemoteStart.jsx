@@ -64,9 +64,9 @@ export default function RemoteStart() {
             </div>
           </div>
 
-          <span className="rs-description-lower">
+          <h2 className="rs-description-lower">
             NOT SURE WHAT KIND OF REMOTE START YOU NEED? EXPLORE OUR OPTIONS!
-          </span>
+          </h2>
         </div>
         {remotes.map((remote, id) => (
           <RemoteCard key={id} options={remote} />
