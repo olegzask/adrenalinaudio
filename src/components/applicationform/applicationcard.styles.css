@@ -47,14 +47,14 @@ input:focus {
 
 .resume {
   margin: 0;
-  width: 40%;
+  width: 50%;
 }
 .resume-header {
   font-size: 1rem;
-  width: 50%;
+  width: 40%;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  text-align: center;
 }
 
 .job-description {
@@ -92,6 +92,7 @@ input:focus {
   margin: 0.3rem 0;
   background-color: white;
   border: 0.1rem solid rgb(187, 186, 186);
+  color: black;
 }
 
 .job-submit-btn:hover {
