@@ -46,11 +46,12 @@
   }
 
   .quick-link {
-    padding: 0.1rem;
+    padding: 0;
+    width: 3.1rem;
     margin: 0;
     cursor: pointer;
-    font-size: 0.8rem;
-    height: auto;
+    font-size: 0.7rem;
+    height: 1.5rem;
     background-color: white;
     border: 0.1rem solid rgb(187, 186, 186);
     border-radius: 0.2rem;
