@@ -23,10 +23,10 @@ export default function RemoteStart() {
   };
 
   return (
-    <div className="autotint-main-container">
-      <div className="autotint-container">
+    <div className="rs-main-container">
+      <div className="rs-container">
         <div className="tint-topper">
-          <h2 className="service-container-header tint-header">
+          <h2 className="service-container-header tint-header rs-serv-header">
             REMOTE <span className="our-services">START</span>
           </h2>
 
@@ -64,7 +64,7 @@ export default function RemoteStart() {
             </div>
           </div>
 
-          <span className="tint-description-lower">
+          <span className="rs-description-lower">
             NOT SURE WHAT KIND OF REMOTE START YOU NEED? EXPLORE OUR OPTIONS!
           </span>
         </div>

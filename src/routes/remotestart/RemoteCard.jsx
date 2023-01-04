@@ -44,9 +44,9 @@ export default function RemoteCard({ options }) {
             opts={{ rem: remoteModel, reset: setModel, txt: "Remote" }}
           />
         )}
-        <h2 className="remote-range">Price: ${price}</h2>
+        {/* <h2 className="remote-range">Price: ${price}</h2> */}
         <button onClick={showModel} className="remote-btn">
-          BOOK NOW
+          REQUEST BOOKING
         </button>
       </div>
     </div>

@@ -51,6 +51,7 @@
   border-radius: 0.2rem;
   background-color: white;
   border: 0.1rem solid rgb(187, 186, 186);
+  color: black;
 }
 
 .submit-request:hover {

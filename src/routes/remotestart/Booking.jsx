@@ -114,7 +114,7 @@ export default function Booking({ opts }) {
           className="form-input"
           type="text"
           name="vehicle"
-          placeholder="Year & Model of your vehicle?"
+          placeholder="Vehicle's make & model?"
         />
       </div>
 
