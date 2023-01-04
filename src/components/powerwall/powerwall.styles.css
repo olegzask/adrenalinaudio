@@ -148,6 +148,7 @@
 }
 
 .element {
+  display: block;
   animation: glowing 2.6s ease-in-out infinite;
 }
 
