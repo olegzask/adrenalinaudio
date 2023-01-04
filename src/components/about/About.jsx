@@ -13,7 +13,7 @@ export default function About() {
       </div>
       <div className="about-bottom-text">
         <p className="about-paragraph">
-          We are the company where you, as a customer come firdst. We strive for
+          We are the company where you, as a customer come first. We strive for
           100% satisfaction for all customers and will not stop until you are
           happy with the end result.
         </p>
