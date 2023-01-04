@@ -30,7 +30,7 @@ export default function RemoteStart() {
             REMOTE <span className="our-services">START</span>
           </h2>
 
-          <span className="tint-description">
+          <span className="rs-description">
             With so many window tint films available, making the perfect choice
             for your vehicle has never been easier. From the latest, top of the
             line nano-ceramic, high performance metallic hybrid, and even
