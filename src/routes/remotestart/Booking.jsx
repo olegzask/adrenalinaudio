@@ -9,6 +9,7 @@ export default function Booking({ opts }) {
     email: "",
     phone: "",
     comments: "",
+    vehicle: "",
   });
 
   const fieldsChecker = () => {
@@ -21,6 +22,7 @@ export default function Booking({ opts }) {
     if (missingFields.length === 0) {
       alert("Your Request is submitted! ");
       clearFields();
+      closeForm();
     } else {
       alert(
         `Following fields are missing: ${missingFields.map(
@@ -35,13 +37,15 @@ export default function Booking({ opts }) {
     const emailInput = document.getElementById("email");
     const phoneInput = document.getElementById("phone");
     const commentsInput = document.getElementById("comments");
+    const vehicleInput = document.getElementById("vehicle");
 
-    setFormInfo({ name: "", email: "", phone: "", comments: "" });
+    setFormInfo({ name: "", email: "", phone: "", comments: "", vehicle: "" });
 
     nameInput.value = "";
     emailInput.value = "";
     phoneInput.value = "";
     commentsInput.value = "";
+    vehicleInput.valie = "";
   };
 
   const handleChange = (e) => {
