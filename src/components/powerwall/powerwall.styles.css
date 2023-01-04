@@ -40,18 +40,6 @@
   font-size: 1.3rem;
   text-align: center;
 }
-@-webkit-keyframes powerOn {
-  0% {
-    color: rgb(61, 61, 61);
-  }
-  50% {
-    color: rgb(142, 253, 77);
-  }
-
-  100% {
-    color: rgb(133, 255, 62);
-  }
-}
 
 @keyframes powerOn {
   0% {
@@ -63,24 +51,6 @@
 
   100% {
     color: rgb(133, 255, 62);
-  }
-}
-
-@-webkit-keyframes fadeInAndOut {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 1;
-  }
-  70% {
-    translate: 0rem;
-  }
-  95% {
-    translate: 0 -100%;
-  }
-  100% {
-    opacity: 1;
   }
 }
 
@@ -102,23 +72,6 @@
   }
 }
 
-@-webkit-keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0.3;
-  }
-  50% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 0.3;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 @keyframes blink {
   0% {
     opacity: 1;
@@ -134,54 +87,6 @@
   }
   100% {
     opacity: 1;
-  }
-}
-
-@-webkit-keyframes glowing {
-  0% {
-    opacity: 0.3;
-    color: rgb(133, 255, 62);
-  }
-  9% {
-    color: rgb(182, 182, 182);
-  }
-  10% {
-    opacity: 0.5;
-  }
-
-  15% {
-    opacity: 1;
-  }
-
-  20% {
-    opacity: 0.3;
-  }
-
-  25% {
-    opacity: 1;
-  }
-
-  30% {
-    opacity: 0.3;
-    color: rgb(184, 184, 184);
-  }
-
-  35% {
-    opacity: 1;
-  }
-
-  49% {
-    color: rgb(184, 184, 184);
-  }
-
-  50% {
-    color: rgb(133, 255, 62);
-  }
-  55% {
-    color: rgb(184, 184, 184);
-  }
-  100% {
-    color: rgb(184, 184, 184);
   }
 }
 
@@ -233,15 +138,6 @@
   }
 }
 
-@-webkit-keyframes fade {
-  0% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @keyframes fade {
   0% {
     opacity: 0.1;
@@ -252,34 +148,21 @@
 }
 
 .element {
-  -webkit-animation: glowing 2.6s ease-in-out infinite;
-  -moz-animation: glowing 2.6s ease-in-out infinite;
   animation: glowing 2.6s ease-in-out infinite;
 }
 
 .fade-in-and-out {
-  -webkit-animation: fadeInAndOut 2s ease-in-out;
-  -moz-animation: fadeInAndOut 2s ease-in-out;
   animation: fadeInAndOut 2s ease-in-out;
 }
 
 .powered {
-  -webkit-animation: powerOn 2s ease-in-out;
-  -moz-animation: powerOn 2s ease-in-out;
   animation: powerOn 2s ease-in-out;
-  animation-duration: 2.6s;
 }
 
 .blinking {
-  -webkit-animation: blink 4s infinite;
-  -moz-animation: blink 4s infinite;
   animation: blink 4s infinite;
-  animation-duration: 4s;
 }
 
 .turned {
-  -webkit-animation: fade 0.5s ease-in;
-  -moz-animation: fade 0.5s ease-in;
   animation: fade 0.5s ease-in;
-  animation-duration: 0.5s;
 }
