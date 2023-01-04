@@ -33,8 +33,8 @@ export const PowerWall = () => {
     <div id="power-wall" className="power-wall-container">
       <div className="power-logo-container">
         <img className="adren-logo" src="logos/adrenalin_logo.png" alt="" />
-        <div onClick={powerOn} className="element power-logo">
-          <FaPowerOff id="power" />
+        <div onClick={powerOn} id="power" className="element power-logo">
+          <FaPowerOff />
         </div>
 
         <h3 id="power-header" className="power-logo-header blinking">
