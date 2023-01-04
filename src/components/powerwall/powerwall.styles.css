@@ -26,10 +26,10 @@
 
 @-webkit-keyframes fadeInAndOut {
   0% {
-    opacity: 100%;
+    opacity: 1;
   }
   50% {
-    opacity: 100%;
+    opacity: 1;
   }
   70% {
     translate: 0rem;
@@ -38,16 +38,16 @@
     translate: 0 -100%;
   }
   100% {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 
 @keyframes fadeInAndOut {
   0% {
-    opacity: 100%;
+    opacity: 1;
   }
   50% {
-    opacity: 100%;
+    opacity: 1;
   }
   70% {
     translate: 0rem;
@@ -56,76 +56,76 @@
     translate: 0 -100%;
   }
   100% {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 
 @-webkit-keyframes blink {
   0% {
-    opacity: 100%;
+    opacity: 1;
   }
   25% {
-    opacity: 30%;
+    opacity: 0.3;
   }
   50% {
-    opacity: 100%;
+    opacity: 1;
   }
   75% {
-    opacity: 30%;
+    opacity: 0.3;
   }
   100% {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 @keyframes blink {
   0% {
-    opacity: 100%;
+    opacity: 1;
   }
   25% {
-    opacity: 30%;
+    opacity: 0.3;
   }
   50% {
-    opacity: 100%;
+    opacity: 1;
   }
   75% {
-    opacity: 30%;
+    opacity: 0.3;
   }
   100% {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 
 @-webkit-keyframes glowing {
   0% {
-    opacity: 30%;
+    opacity: 0.3;
     color: rgb(133, 255, 62);
   }
   9% {
     color: rgb(182, 182, 182);
   }
   10% {
-    opacity: 50%;
+    opacity: 0.5;
   }
 
   15% {
-    opacity: 100%;
+    opacity: 1;
   }
 
   20% {
-    opacity: 30%;
+    opacity: 0.3;
   }
 
   25% {
-    opacity: 100%;
+    opacity: 1;
   }
 
   30% {
-    opacity: 30%;
+    opacity: 0.3;
     color: rgb(184, 184, 184);
   }
 
   35% {
-    opacity: 100;
+    opacity: 1;
   }
 
   49% {
@@ -145,35 +145,35 @@
 
 @keyframes glowing {
   0% {
-    opacity: 30%;
+    opacity: 0.3;
     color: rgb(133, 255, 62);
   }
   9% {
     color: rgb(182, 182, 182);
   }
   10% {
-    opacity: 50%;
+    opacity: 0.5;
   }
 
   15% {
-    opacity: 100%;
+    opacity: 1;
   }
 
   20% {
-    opacity: 30%;
+    opacity: 0.3;
   }
 
   25% {
-    opacity: 100%;
+    opacity: 1;
   }
 
   30% {
-    opacity: 30%;
+    opacity: 0.3;
     color: rgb(184, 184, 184);
   }
 
   35% {
-    opacity: 100;
+    opacity: 1;
   }
 
   49% {
@@ -193,19 +193,19 @@
 
 @-webkit-keyframes fade {
   0% {
-    opacity: 10%;
+    opacity: 0.1;
   }
   100% {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 
 @keyframes fade {
   0% {
-    opacity: 10%;
+    opacity: 0.1;
   }
   100% {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 
