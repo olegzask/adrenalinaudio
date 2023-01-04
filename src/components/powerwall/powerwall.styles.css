@@ -209,6 +209,40 @@
   }
 }
 
+.fade-in-and-out {
+  -webkit-animation: fadeInAndOut 2s ease-in-out;
+  -moz-animation: fadeInAndOut 2s ease-in-out;
+  animation: fadeInAndOut 2s ease-in-out;
+}
+
+.element {
+  -webkit-animation: glowing 2.6s ease-in-out infinite;
+  -moz-animation: glowing 2.6s ease-in-out infinite;
+  animation: glowing 2.6s ease-in-out infinite;
+  animation-duration: 2.6s;
+}
+
+.powered {
+  -webkit-animation: powerOn 2s ease-in-out;
+  -moz-animation: powerOn 2s ease-in-out;
+  animation: powerOn 2s ease-in-out;
+  animation-duration: 2.6s;
+}
+
+.blinking {
+  -webkit-animation: blink 4s infinite;
+  -moz-animation: blink 4s infinite;
+  animation: blink 4s infinite;
+  animation-duration: 4s;
+}
+
+.turned {
+  -webkit-animation: fade 0.5s ease-in;
+  -moz-animation: fade 0.5s ease-in;
+  animation: fade 0.5s ease-in;
+  animation-duration: 0.5s;
+}
+
 .power-wall-container {
   position: absolute;
   margin: 0 auto;
@@ -250,38 +284,4 @@
   color: rgb(117, 117, 117);
   font-size: 1.3rem;
   text-align: center;
-}
-
-.fade-in-and-out {
-  -webkit-animation: fadeInAndOut 2s ease-in-out;
-  -moz-animation: adeInAndOut 2s ease-in-out;
-  animation: fadeInAndOut 2s ease-in-out;
-}
-
-.element {
-  -webkit-animation: glowing 2.6s ease-in-out infinite;
-  -moz-animation: glowing 2.6s ease-in-out infinite;
-  animation: glowing 2.6s ease-in-out infinite;
-  animation-duration: 2.6s;
-}
-
-.powered {
-  -webkit-animation: powerOn 2s ease-in-out;
-  -moz-animation: powerOn 2s ease-in-out;
-  animation: powerOn 2s ease-in-out;
-  animation-duration: 2.6s;
-}
-
-.blinking {
-  -webkit-animation: blink 4s infinite;
-  -moz-animation: blink 4s infinite;
-  animation: blink 4s infinite;
-  animation-duration: 4s;
-}
-
-.turned {
-  -webkit-animation: fade 0.5s ease-in;
-  -moz-animation: fade 0.5s ease-in;
-  animation: fade 0.5s ease-in;
-  animation-duration: 0.5s;
 }
