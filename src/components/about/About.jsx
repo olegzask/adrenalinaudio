@@ -6,7 +6,7 @@ export default function About() {
   return (
     <div className="about-container">
       <div className="about-top-text">
-        For over 22 Years, Adrenalin Audio has been delivering{" "}
+        Since 2001, Adrenalin Audio has been delivering{" "}
         <span className="about-top-bold">
           best quality products and services in Edmonton, Alberta.
         </span>

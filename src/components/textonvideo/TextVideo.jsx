@@ -9,12 +9,13 @@ export default function TextVideo() {
         <span className="text-header">TINT / PPF</span>
         <span className="text-header">REMOTE START</span>
         <span className="text-header">AUDIO / VIDEO</span>
+        <span className="text-header">12V ACCESSORIES</span>
       </div>
 
       <div className="text-bottom">
         <p className="text-main">
-          22 Years in business. Let our team of professionals take care of your
-          vehicle.
+          In business since 2001. Let our team of professionals take care of
+          your vehicle.
         </p>
       </div>
       <LinkComponent
