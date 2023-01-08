@@ -1,16 +1,17 @@
 .text-on-video {
   margin: 0;
-  width: 85%;
+  width: 90%;
   height: auto;
   position: absolute;
   top: 8em;
-  left: 1.5rem;
+  left: 1rem;
 }
 
 .text-top {
   display: flex;
   flex-direction: column;
   font-size: 2.5rem;
+  gap: 0.5rem;
   font-weight: 600;
   color: rgb(255, 255, 255);
   text-shadow: 0 0 1rem black;
