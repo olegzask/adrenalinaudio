@@ -10,6 +10,8 @@ import ContactUs from "./routes/contact/ContactUs";
 import Services from "./routes/services/Services";
 import RemoteStart from "./routes/remotestart/RemoteStart";
 import PaintProtection from "./routes/paintprotection/PaintProtection";
+import Dashcams from "./routes/dashcams/Dashcams";
+import InfoCard from "./components/moreinfo/InfoCard";
 import { Simulator } from "./components/simulator/simulator";
 
 const App = () => {
@@ -29,6 +31,8 @@ const App = () => {
           path="services/paint-protection-film"
           element={<PaintProtection />}
         />
+        <Route path="services/dash-cams" element={<Dashcams />} />
+        <Route path="services/:service/:id" element={<InfoCard />} />
       </Route>
     </Routes>
   );

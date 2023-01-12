@@ -1,14 +1,26 @@
 import React, { useState, useContext } from "react";
+import InfoCard from "../../components/moreinfo/InfoCard";
 import { Link } from "react-router-dom";
+import Booking from "../remotestart/Booking";
 import { BooleanContext } from "../../store";
-import Booking from "./Booking";
-import { remotes } from "./remoteslist";
-import "./remotestart.styles.css";
+import { dashcams } from "./dashcamlist";
 
-export default function RemoteCard({ options }) {
+export default function DashcamCard({ options }) {
   const [remoteModel, setModel] = useState();
-  const { model, price, brandLogo, features, imgColor, range } = options;
   const { setActiveProduct } = useContext(BooleanContext);
+
+  const {
+    model,
+    type,
+    brand,
+    moreInfo,
+    description,
+    images,
+    brandLogo,
+    features,
+    imgColor,
+    range,
+  } = options;
 
   const showModel = (e) => {
     const parentCont = e.target.closest(".remote-card-container");
@@ -20,7 +32,7 @@ export default function RemoteCard({ options }) {
 
   const toggleActiveProduct = (e) => {
     const clickedProductId = e.target.closest(".remote-card-container").id;
-    const properProduct = remotes.find((el) => el.model === clickedProductId);
+    const properProduct = dashcams.find((el) => el.model === clickedProductId);
     setActiveProduct(properProduct);
   };
 
@@ -39,7 +51,7 @@ export default function RemoteCard({ options }) {
         <h2 className="remote-model">
           Model: <span className="model">{model}</span>
         </h2>
-        <h2 className="remote-range">Range: {range}</h2>
+        <h2 className="remote-range">{range}</h2>
       </div>
 
       <div className="img-feat-container">
@@ -56,10 +68,11 @@ export default function RemoteCard({ options }) {
       <div className="links-container">
         {!remoteModel ? null : (
           <Booking
-            opts={{ rem: remoteModel, reset: setModel, txt: "Remote" }}
+            opts={{ rem: remoteModel, reset: setModel, txt: "DashCam" }}
           />
         )}
         {/* <h2 className="remote-range">Price: ${price}</h2> */}
+
         <button onClick={showModel} className="remote-btn">
           REQUEST BOOKING
         </button>

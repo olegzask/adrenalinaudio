@@ -1,0 +1,52 @@
+.infocard-container {
+  margin: 0;
+  width: fit-content;
+  position: relative;
+  top: 4.45rem;
+  margin-bottom: 7rem;
+  background-color: white;
+}
+
+.model-nav-container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.pics-container {
+  margin: 0;
+  width: fit-content;
+}
+.allpics-container {
+  margin: 0 auto;
+  margin-top: 1rem;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-img {
+  width: 2.5rem;
+}
+
+.main-product-img {
+  margin: 0 auto;
+  display: flex;
+  width: 50%;
+}
+
+.apple-google-stores-container {
+  margin: 0 auto;
+  margin-top: 1rem;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.store-img {
+  margin: 0;
+  width: 35%;
+}
