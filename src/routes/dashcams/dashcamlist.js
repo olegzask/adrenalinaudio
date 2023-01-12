@@ -61,6 +61,7 @@ export const dashcams = [
       "The Momento M6 is a smart dash cam that provides 270° of surveillance coverage – and records footage that you can view from the Momento smartphone app!",
       "The M6 records in Full HD, giving you crystal clear footage in 1080p. Additionally, the M6 is equipped with a Sony Exmor-R image sensor that is enhanced with STARVIS, the industry-standard for surveillance applications, ensuring low-light performance.",
       "The M6 includes a 32GB micro-SD card that can be upgraded to any Class 10 micro-SD card up to 256GB. That's twice as much as our leading competitors! Plus, its easy-to-use file management system best utilizes your storage while ensuring your most important videos stay saved.",
+      "The M6 is protected by a 2-Year manufacturer’s Warranty. This warranty covers both front and rear cameras, and protects your purchase from defects or malfunctioning parts*.",
     ],
   },
 ];

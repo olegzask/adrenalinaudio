@@ -3,6 +3,7 @@ import InfoCard from "../../components/moreinfo/InfoCard";
 import { Link } from "react-router-dom";
 import Booking from "../remotestart/Booking";
 import { BooleanContext } from "../../store";
+import { scrollToTop } from "../../components/helperFunctions/helpers";
 import { dashcams } from "./dashcamlist";
 
 export default function DashcamCard({ options }) {
@@ -77,7 +78,7 @@ export default function DashcamCard({ options }) {
           REQUEST BOOKING
         </button>
 
-        <Link to={model}>
+        <Link onClick={scrollToTop} to={model}>
           <button onClick={toggleActiveProduct} className="remote-btn">
             MORE INFO
           </button>
