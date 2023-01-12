@@ -20,6 +20,7 @@ export const dashcams = [
       "/images/dashcams/M6/M6-rearcam.png",
       "/images/dashcams/M6/M6-top.png",
       "/images/dashcams/M6/M6-with-rearcam.png",
+      "/images/dashcams/M6/32GB.png",
     ],
     features: [
       {
@@ -54,9 +55,12 @@ export const dashcams = [
       },
     ],
     range: "Wi-Fi enabled Full HD",
-    moreinfo:
-      " The M6 is Momento's first dash cam that connects to your smartphone by creating a small and secure Wi-Fi hotspot inside your vehicle that only you can access through the Momento App. In addition to giving you easy access to your video files, the Momento App also provides additional driving insights such as speed, location and trip data.",
-    description:
-      " Wi-Fi enabled Full HD (1080p) dash camera system including front camera, rear camera, GPS antenna, and 32GB micro-SD memory card. The Momento M6 is a smart dash cam that provides 270° of surveillance coverage – and records footage that you can view from the Momento smartphone app!",
+    description: [
+      "The M6 is Momento's first dash cam that connects to your smartphone by creating a small and secure Wi-Fi hotspot inside your vehicle that only you can access through the Momento App. In addition to giving you easy access to your video files, the Momento App also provides additional driving insights such as speed, location and trip data.",
+      "Wi-Fi enabled Full HD (1080p) dash camera system including front camera, rear camera, GPS antenna, and 32GB micro-SD memory card. The Momento M6 is a smart dash cam that provides 270° of surveillance coverage  and records footage that you can view from the Momento smartphone app!",
+      "The Momento M6 is a smart dash cam that provides 270° of surveillance coverage – and records footage that you can view from the Momento smartphone app!",
+      "The M6 records in Full HD, giving you crystal clear footage in 1080p. Additionally, the M6 is equipped with a Sony Exmor-R image sensor that is enhanced with STARVIS, the industry-standard for surveillance applications, ensuring low-light performance.",
+      "The M6 includes a 32GB micro-SD card that can be upgraded to any Class 10 micro-SD card up to 256GB. That's twice as much as our leading competitors! Plus, its easy-to-use file management system best utilizes your storage while ensuring your most important videos stay saved.",
+    ],
   },
 ];

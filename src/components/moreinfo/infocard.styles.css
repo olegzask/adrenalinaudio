@@ -9,14 +9,33 @@
 
 .model-nav-container {
   margin: 0 auto;
+  position: relative;
+  margin-top: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 90%;
 }
 
+.model-container {
+  font-size: 1.2rem;
+}
+
+.info-nav {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.info-btn {
+  cursor: pointer;
+  font-size: 0.8rem;
+  border: none;
+  background-color: white;
+}
+
 .pics-container {
   margin: 0;
+  margin-top: 1rem;
   width: fit-content;
 }
 .allpics-container {
@@ -35,6 +54,33 @@
   margin: 0 auto;
   display: flex;
   width: 50%;
+}
+
+.product-features-container {
+  margin: 0 auto;
+  margin-top: 1rem;
+  width: 90%;
+}
+
+.prod-list {
+  margin: 0;
+  padding: 1rem;
+  padding-left: 2rem;
+}
+
+.description-point {
+  font-size: 0.8rem;
+  text-align: left;
+  font-weight: 400;
+  margin: 0.5rem 0;
+}
+
+.quick-description {
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 1.6rem;
+  width: 100%;
+  text-align: center;
 }
 
 .apple-google-stores-container {

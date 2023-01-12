@@ -1,6 +1,7 @@
 .navbar-container {
   margin: 0;
   width: 100%;
+  position: absolute;
 }
 .navbar {
   margin: 0;
