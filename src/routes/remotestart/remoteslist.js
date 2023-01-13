@@ -16,11 +16,11 @@ export const remotes = [
     imgBW: "/images/remotes/drone-bw.jpg",
     imgColor: "/images/remotes/drone-color.jpg",
     images: [
-      "/images/remotes/drone/drone_1.png",
-      "/images/remotes/drone/drone_2.png",
-      "/images/remotes/drone/drone_3.png",
-      "/images/remotes/drone/drone_4.png",
-      "/images/remotes/drone/drone_5.png",
+      "/images/remotes/drone/drone_1.jpg",
+      "/images/remotes/drone/drone_2.jpg",
+      "/images/remotes/drone/drone_3.jpg",
+      "/images/remotes/drone/drone_4.jpg",
+      "/images/remotes/drone/drone_5.jpg",
     ],
     description: [" Remote Start can be installed in any vehicle."],
 
@@ -57,8 +57,8 @@ export const remotes = [
     imgBW: "/images/remotes/t12-bw.jpg",
     imgColor: "/images/remotes/t12-color.jpg",
     images: [
-      "/images/remotes/remote-imgs/t11_1.png",
-      "/images/remotes/remote-imgs/t11_2.png",
+      "/images/remotes/remote-imgs/t11_1.jpg",
+      "/images/remotes/remote-imgs/t11_2.jpg",
     ],
     features: [
       {
@@ -104,7 +104,10 @@ export const remotes = [
     price: 900,
     imgBW: "/images/remotes/q9-bw.jpg",
     imgColor: "/images/remotes/q9-color.jpg",
-
+    images: [
+      "/images/remotes/remote-imgs/q9_1.jpg",
+      "/images/remotes/remote-imgs/q9_2.jpg",
+    ],
     features: [
       {
         name: "2-Way LCD",
@@ -128,7 +131,7 @@ export const remotes = [
       },
     ],
     range: "3000 M",
-    description: " Remote Start can be installed in any vehicle.",
+    description: [" Remote Start can be installed in any vehicle."],
   },
   {
     model: "T9FM",
@@ -138,6 +141,10 @@ export const remotes = [
     price: 800,
     imgBW: "/images/remotes/t9-bw.jpg",
     imgColor: "/images/remotes/t9-color.jpg",
+    images: [
+      "/images/remotes/remote-imgs/t9_1.jpg",
+      "/images/remotes/remote-imgs/t9_2.jpg",
+    ],
     features: [
       {
         name: "2-Way LCD",
@@ -161,7 +168,7 @@ export const remotes = [
       },
     ],
     range: "1000 M",
-    description: " Remote Start can be installed in any vehicle.",
+    description: [" Remote Start can be installed in any vehicle."],
   },
   {
     model: "G15SS",
@@ -171,6 +178,10 @@ export const remotes = [
     price: 800,
     imgBW: "/images/remotes/g15-bw.jpg",
     imgColor: "/images/remotes/g15-color.jpg",
+    images: [
+      "/images/remotes/remote-imgs/g15ss_1.jpg",
+      "/images/remotes/remote-imgs/g15ss_2.jpg",
+    ],
     features: [
       {
         name: "2-Way LED",
@@ -199,7 +210,7 @@ export const remotes = [
       },
     ],
     range: "3000 M",
-    description: " Remote Start can be installed in any vehicle.",
+    description: [" Remote Start can be installed in any vehicle."],
   },
   {
     model: "G15FM",
@@ -209,6 +220,10 @@ export const remotes = [
     price: 700,
     imgBW: "/images/remotes/g15-bw.jpg",
     imgColor: "/images/remotes/g15-color.jpg",
+    images: [
+      "/images/remotes/remote-imgs/g15fm_1.jpg",
+      "/images/remotes/remote-imgs/g15fm_2.jpg",
+    ],
     features: [
       {
         name: "2-Way LED",
@@ -232,6 +247,6 @@ export const remotes = [
       },
     ],
     range: "1000 M",
-    description: " Remote Start can be installed in any vehicle.",
+    description: [" Remote Start can be installed in any vehicle."],
   },
 ];

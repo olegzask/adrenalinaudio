@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { BooleanContext } from "../../store";
 import Booking from "./Booking";
 import { remotes } from "./remoteslist";
+import { scrollToTop } from "../../components/helperFunctions/helpers";
 import "./remotestart.styles.css";
 
 export default function RemoteCard({ options }) {
@@ -22,6 +23,7 @@ export default function RemoteCard({ options }) {
     const clickedProductId = e.target.closest(".remote-card-container").id;
     const properProduct = remotes.find((el) => el.model === clickedProductId);
     setActiveProduct(properProduct);
+    scrollToTop();
   };
 
   return (
