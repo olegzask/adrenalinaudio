@@ -15,6 +15,15 @@ export const remotes = [
     price: 750,
     imgBW: "/images/remotes/drone-bw.jpg",
     imgColor: "/images/remotes/drone-color.jpg",
+    images: [
+      "/images/remotes/drone/drone_1.png",
+      "/images/remotes/drone/drone_2.png",
+      "/images/remotes/drone/drone_3.png",
+      "/images/remotes/drone/drone_4.png",
+      "/images/remotes/drone/drone_5.png",
+    ],
+    description: [" Remote Start can be installed in any vehicle."],
+
     features: [
       {
         name: "GPS Tracking",
@@ -38,7 +47,6 @@ export const remotes = [
       },
     ],
     range: "Unlimited",
-    description: " Remote Start can be installed in any vehicle.",
   },
   {
     model: "T12SS",
@@ -48,6 +56,10 @@ export const remotes = [
     price: 950,
     imgBW: "/images/remotes/t12-bw.jpg",
     imgColor: "/images/remotes/t12-color.jpg",
+    images: [
+      "/images/remotes/remote-imgs/t11_1.png",
+      "/images/remotes/remote-imgs/t11_2.png",
+    ],
     features: [
       {
         name: "2-Way LCD",
@@ -81,7 +93,7 @@ export const remotes = [
       },
     ],
     range: "4500 M",
-    description: " Remote Start can be installed in any vehicle.",
+    description: [" Remote Start can be installed in any vehicle."],
   },
 
   {
