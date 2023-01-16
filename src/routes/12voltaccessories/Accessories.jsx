@@ -10,7 +10,7 @@ export default function Accessories() {
         <div className="rs-container">
           <div className="rs-topper">
             <h2 className="service-container-header tint-header rs-serv-header">
-              DASH <span className="our-services">CAMERAS</span>
+              12 VOLT <span className="our-services">ACCESSORIES</span>
             </h2>
 
             <span className="rs-description">
@@ -24,7 +24,7 @@ export default function Accessories() {
             <br />
 
             <h2 className="rs-description-lower">
-              NOT SURE WHAT KIND OF DASH CAMERA YOU NEED? EXPLORE OUR OPTIONS!
+              NOT SURE WHAT KIND OF ACCESSORY YOU NEED? EXPLORE OUR OPTIONS!
             </h2>
           </div>
           {allAccessories.map((remote, id) => (
