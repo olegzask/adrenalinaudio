@@ -6,7 +6,7 @@ export const allAccessories = [
   {
     app: false,
     model: "HS1",
-    brand: "Adrenalin Audio",
+    brand: "AA",
     brandLogo: "/logos/adrenalin_logo.png",
     price: 0,
     imgBW: "",
