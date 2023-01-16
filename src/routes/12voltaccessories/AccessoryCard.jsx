@@ -70,7 +70,7 @@ export default function AccessoryCard({ options }) {
       <div className="links-container">
         {!remoteModel ? null : (
           <Booking
-            opts={{ rem: remoteModel, reset: setModel, txt: "DashCam" }}
+            opts={{ rem: remoteModel, reset: setModel, txt: "H-Seat" }}
           />
         )}
         {/* <h2 className="remote-range">Price: ${price}</h2> */}
