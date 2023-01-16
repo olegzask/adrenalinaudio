@@ -4,6 +4,7 @@ import { MdLightMode } from "react-icons/md";
 
 export const dashcams = [
   {
+    app: true,
     model: "M6",
     category: "DashCam",
     type: ["Wi-Fi HD Dual Dash Camera"],
