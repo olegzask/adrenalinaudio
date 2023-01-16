@@ -31,29 +31,6 @@ export default function Dashcams() {
             reiciendis unde similique non. Tempora.
           </span>
           <br />
-          {/* <div className="quick-links">
-            <h2 className="ql-hdr">Quick Links</h2>
-            <div className="ql">
-              <button className="quick-link" onClick={scrollToRemote}>
-                X1R
-              </button>
-              <button className="quick-link" onClick={scrollToRemote}>
-                T12SS
-              </button>
-              <button className="quick-link" onClick={scrollToRemote}>
-                Q9SS
-              </button>
-              <button className="quick-link" onClick={scrollToRemote}>
-                T9FM
-              </button>
-              <button className="quick-link" onClick={scrollToRemote}>
-                G15SS
-              </button>
-              <button className="quick-link" onClick={scrollToRemote}>
-                G15FM
-              </button>
-            </div>
-          </div> */}
 
           <h2 className="rs-description-lower">
             NOT SURE WHAT KIND OF DASH CAMERA YOU NEED? EXPLORE OUR OPTIONS!

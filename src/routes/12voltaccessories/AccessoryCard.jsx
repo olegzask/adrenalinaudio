@@ -1,13 +1,29 @@
-import React, { useState, useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import Booking from "../remotestart/Booking";
-import { BooleanContext } from "../../store";
 import { scrollToTop } from "../../components/helperFunctions/helpers";
-import { dashcams } from "./dashcamlist";
+import { allAccessories } from "./accessories";
+import { BooleanContext } from "../../store";
 
-export default function DashcamCard({ options }) {
-  const [remoteModel, setModel] = useState();
+export default function AccessoryCard({ options }) {
   const { setActiveProduct } = useContext(BooleanContext);
+  const [remoteModel, setModel] = useState();
+
+  const toggleActiveProduct = (e) => {
+    const clickedProductId = e.target.closest(".remote-card-container").id;
+    const properProduct = allAccessories.find(
+      (el) => el.model === clickedProductId
+    );
+    setActiveProduct(properProduct);
+  };
+
+  const showModel = (e) => {
+    const parentCont = e.target.closest(".remote-card-container");
+    const arr = Array.from(parentCont.children)[1];
+    const newArr = Array.from(arr.children)[0];
+    const remModel = Array.from(newArr.children)[0].innerHTML;
+    setModel(remModel + "");
+  };
 
   const {
     model,
@@ -21,20 +37,6 @@ export default function DashcamCard({ options }) {
     imgColor,
     range,
   } = options;
-
-  const showModel = (e) => {
-    const parentCont = e.target.closest(".remote-card-container");
-    const arr = Array.from(parentCont.children)[1];
-    const newArr = Array.from(arr.children)[0];
-    const remModel = Array.from(newArr.children)[0].innerHTML;
-    setModel(remModel + "");
-  };
-
-  const toggleActiveProduct = (e) => {
-    const clickedProductId = e.target.closest(".remote-card-container").id;
-    const properProduct = dashcams.find((el) => el.model === clickedProductId);
-    setActiveProduct(properProduct);
-  };
 
   return (
     <div id={model} className="remote-card-container">

@@ -13,6 +13,7 @@ import PaintProtection from "./routes/paintprotection/PaintProtection";
 import Dashcams from "./routes/dashcams/Dashcams";
 import InfoCard from "./components/moreinfo/InfoCard";
 import { Simulator } from "./components/simulator/simulator";
+import Accessories from "./routes/12voltaccessories/Accessories";
 
 const App = () => {
   return (
@@ -32,6 +33,8 @@ const App = () => {
           element={<PaintProtection />}
         />
         <Route path="services/dash-cams" element={<Dashcams />} />
+        <Route path="services/12-volt-accessories" element={<Accessories />} />
+
         <Route path="services/:service/:id" element={<InfoCard />} />
       </Route>
     </Routes>
