@@ -9,7 +9,7 @@ export default function InfoBottom({ product }) {
 
   return (
     <div className="infocard-bottom-container">
-      {app ? <AppStore /> : null}
+      {app ? <AppStore info={product} /> : null}
       <div className="action-buttons-container">
         <button onClick={stepBack} className="infobtn">
           BACK TO PRODUCTS

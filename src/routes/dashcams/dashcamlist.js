@@ -5,6 +5,10 @@ import { MdLightMode } from "react-icons/md";
 export const dashcams = [
   {
     app: true,
+    appleLink:
+      "https://apps.apple.com/ca/app/momento-m6-dash-cam-viewer/id1447529243",
+    googleLink:
+      "https://play.google.com/store/apps/details?id=kr.e777.mcnex&hl=en_CA&gl=US&pli=1",
     model: "M6",
     category: "DashCam",
     type: ["Wi-Fi HD Dual Dash Camera"],

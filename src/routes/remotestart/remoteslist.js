@@ -9,6 +9,9 @@ import { TbArrowAutofitDown } from "react-icons/tb";
 export const remotes = [
   {
     app: true,
+    appleLink: "https://apps.apple.com/us/app/dronemobile/id380549030",
+    googleLink:
+      "https://play.google.com/store/apps/details?id=com.whiz.droneapp&hl=en_CA&gl=US",
     model: "X1R",
     type: ["Smart Control"],
     brand: "Drone",
