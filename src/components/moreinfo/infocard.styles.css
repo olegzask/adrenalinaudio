@@ -1,6 +1,6 @@
 .infocard-container {
   margin: 0;
-  width: fit-content;
+  width: 100%;
   position: relative;
   top: 4.45rem;
   margin-bottom: 7rem;
@@ -173,4 +173,21 @@
   cursor: pointer;
   margin: 0;
   width: 40%;
+}
+
+.info-btn {
+  color: rgb(153, 153, 153);
+}
+
+.info-btn:hover {
+  transition: 0.3s;
+  color: black;
+}
+
+.active-info {
+  transition: 0.2s;
+  color: black;
+  background-color: rgb(133, 255, 62);
+  border: none;
+  border-radius: 0.2rem;
 }

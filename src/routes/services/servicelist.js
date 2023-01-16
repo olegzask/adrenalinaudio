@@ -17,7 +17,7 @@ export const services = [
     link: "services/window-tint",
   },
   {
-    name: "Paint Protection Film",
+    name: "Protection Film",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada dignissim velit a tincidunt. Fusce vel mi eget diam viverra laoreet sed sit amet dolor.",
     image: "images/services-images/ppf-color.jpg",

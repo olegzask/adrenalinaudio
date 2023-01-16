@@ -8,6 +8,7 @@ import { TbArrowAutofitDown } from "react-icons/tb";
 
 export const remotes = [
   {
+    app: true,
     model: "X1R",
     type: ["Smart Control"],
     brand: "Drone",
@@ -22,7 +23,15 @@ export const remotes = [
       "/images/remotes/drone/drone_4.jpg",
       "/images/remotes/drone/drone_5.jpg",
     ],
-    description: [" Remote Start can be installed in any vehicle."],
+    description: [
+      "The Drone X1R adds unlimited range smartphone control and GPS tracking to any compatible remote start or security system (Compustar, iDatalink, iDataStart). This module is powered by LTE with 3G fallback, ensuring best-in-class coverage in Canada.",
+      "Enables remote start, keyless entry & more from virtually anywhere!",
+      "Control & track your car from anywhere over LTE with 3G fallback.",
+      "Compatible with over 90% of vehicles on the road.",
+      "Locate your vehicle using DroneMobile Maps.",
+      "Receive alerts via smartphone.",
+      "Set mileage-based service reminders.",
+    ],
 
     features: [
       {
@@ -49,6 +58,7 @@ export const remotes = [
     range: "Unlimited",
   },
   {
+    app: false,
     model: "T12SS",
     type: ["2-Way LCD", "2-Way LED"],
     brand: "Compustar",
@@ -93,10 +103,18 @@ export const remotes = [
       },
     ],
     range: "4500 M",
-    description: [" Remote Start can be installed in any vehicle."],
+    description: [
+      "3-mile max range, USB rechargeable, IPX-7 waterproof remote kit. Includes one 2-way LCD and one 2-way LED remote. Works with all Compustar remote start and security systems.",
+      "The Compustar T12 remote kit now includes a 2-way LCD remote and a 2-Wat LED remote as a backup. So no matter what, you will receive instant command confirmation when you remote start and secure your vehicle",
+      "Lock and start your vehicle with confidence using Compustar 2-way remotes, which provide visual and audible confirmation when your commands are sent successfully.",
+      "The Compustar T12 utilizes Digital Spread Spectrum Technology to send lock and start commands to your vehicle from up to 3-miles away.",
+      "The T12 LCD remote has a built-in lithium-ion battery that you can recharge using a standard micro-USB cable.",
+      "The T12 is IPX-7 waterproof and fuatures a high-strength injection molded body to withstand everyday impact.",
+    ],
   },
 
   {
+    app: false,
     model: "Q9SS",
     type: ["2-Way LCD", "2-Way LED"],
     brand: "Compustar",
@@ -131,9 +149,15 @@ export const remotes = [
       },
     ],
     range: "3000 M",
-    description: [" Remote Start can be installed in any vehicle."],
+    description: [
+      "3000-ft max range remote kit with 2-way interactive LCD. Includes additional backup 1-way remote. Works with all Compustar remote start and security systems.",
+      "Lock and start your vehivle with confidence using Compustar 2-Way remotes, which provide visual and audible confirmation when your commands are sent successfully.",
+      "Checking on your vehicle's safety and status is easier with the Q9. The Backlit, color LCD provides better visibility and animations to confirm every successful command.",
+      "Start and secure your vehicle in two different ways depending on what's most comfortable for your hand. Use the side buttons OR te 4-in-1 button on the front. Tap to lock, double tap to unlock, and hold to remote start/stop.",
+    ],
   },
   {
+    app: false,
     model: "T9FM",
     type: ["2-Way LCD", "1-Way LCD"],
     brand: "Compustar",
@@ -168,9 +192,14 @@ export const remotes = [
       },
     ],
     range: "1000 M",
-    description: [" Remote Start can be installed in any vehicle."],
+    description: [
+      "3000-ft max range remote kit with 2-way interactive LCD. Includes additional backup 1-way remote. Works with all Compustar remote start and security systems.",
+      "Lock and start your vehivle with confidence using Compustar 2-Way remotes, which provide visual and audible confirmation when your commands are sent successfully.",
+      "Along with instant command confirmation, the PRIME T9 has an interactive screen that will show you vehicle's status at all times.",
+    ],
   },
   {
+    app: false,
     model: "G15SS",
     type: ["2-Way LED"],
     brand: "Compustar PRO",
@@ -210,9 +239,13 @@ export const remotes = [
       },
     ],
     range: "3000 M",
-    description: [" Remote Start can be installed in any vehicle."],
+    description: [
+      "Lock and start your vehivle with confidence using Compustar 2-Way remotes, which provide visual and audible confirmation when your commands are sent successfully.",
+      "The 2-Way PRO G15 features a high-strength injection molded body that is water-resistand and withstands everyday impact.",
+    ],
   },
   {
+    app: false,
     model: "G15FM",
     type: ["2-Way LED", "1-Way LED"],
     brand: "Compustar",
@@ -247,6 +280,9 @@ export const remotes = [
       },
     ],
     range: "1000 M",
-    description: [" Remote Start can be installed in any vehicle."],
+    description: [
+      "Lock and start your vehivle with confidence using Compustar 2-Way remotes, which provide visual and audible confirmation when your commands are sent successfully.",
+      "The 2-Way & 1-Way G15 features a high-strength injection molded body that is water-resistand and withstands everyday impact.",
+    ],
   },
 ];
