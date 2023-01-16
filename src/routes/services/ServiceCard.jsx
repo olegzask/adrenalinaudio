@@ -14,18 +14,18 @@ export default function ServiceCard({ opts }) {
         <div className="service-link-container">
           <LinkComponent
             opts={{
-              name: "MORE INFO",
+              name: "BROWSE",
               linkTo: link,
               clName: "service-btn",
             }}
           />
-          <LinkComponent
+          {/* <LinkComponent
             opts={{
               name: "CONTACT US",
               linkTo: "contact",
               clName: "service-btn",
             }}
-          />
+          /> */}
         </div>
       </div>
 
