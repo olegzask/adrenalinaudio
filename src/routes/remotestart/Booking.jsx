@@ -66,7 +66,7 @@ export default function Booking({ opts }) {
     <div id="bookingForm" className="contactform-container booking-container">
       <div className="close-hdr">
         <h2 className="contactform-header booking-header">
-          Send booking request
+          Send us your request
         </h2>
         <MdClose onClick={closeForm} className="booking-close" />
       </div>

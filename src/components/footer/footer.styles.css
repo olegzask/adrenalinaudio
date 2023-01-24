@@ -10,7 +10,7 @@
   margin: 0;
   margin-bottom: 1rem;
   display: flex;
-  gap: 0.5rem;
+  justify-content: space-between;
 }
 
 .footer-left-side {
@@ -21,17 +21,17 @@
 }
 
 .have-question {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 800;
 }
 .ask-us-anything {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 100;
 }
 
 .direct-link {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: rgb(133, 255, 62);
   font-weight: 600;
   display: flex;
@@ -78,7 +78,7 @@
 .footer-address {
   margin: 1rem 0;
   width: 100%;
-  font-size: 0.9rem;
+  font-size: 0.6rem;
   text-align: center;
   cursor: pointer;
   text-decoration: none;

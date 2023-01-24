@@ -51,7 +51,7 @@ export default function MarineCard({ options }) {
 
       <div className="model-range-container">
         <h2 className="remote-model">
-          Model: <span className="model">{model}</span>
+          <span className="model">{model}</span>
         </h2>
         <h2 className="remote-range">{range}</h2>
       </div>
@@ -76,12 +76,12 @@ export default function MarineCard({ options }) {
         {/* <h2 className="remote-range">Price: ${price}</h2> */}
 
         <button onClick={showModel} className="remote-btn">
-          REQUEST BOOKING
+          REQUEST INFO
         </button>
 
         <Link onClick={scrollToTop} to={model}>
           <button onClick={toggleActiveProduct} className="remote-btn">
-            MORE INFO
+            READ MORE
           </button>
         </Link>
       </div>

@@ -24,11 +24,11 @@ export const services = [
     link: "services/paint-protection-film",
   },
   {
-    name: "Dash Cams",
+    name: "Car Audio / Video",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada dignissim velit a tincidunt. Fusce vel mi eget diam viverra laoreet sed sit amet dolor.",
-    image: "images/services-images/dash-color.jpg",
-    link: "services/dash-cams",
+    image: "images/services-images/car_audio.jpg",
+    link: "services/car-audio-video",
   },
   {
     name: "Marine Audio",
@@ -37,6 +37,14 @@ export const services = [
     image: "images/services-images/marine-color.jpg",
     link: "services/marine-audio",
   },
+  {
+    name: "Dash Cams",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada dignissim velit a tincidunt. Fusce vel mi eget diam viverra laoreet sed sit amet dolor.",
+    image: "images/services-images/dash-color.jpg",
+    link: "services/dash-cams",
+  },
+
   {
     name: "12V Accessories",
     description:

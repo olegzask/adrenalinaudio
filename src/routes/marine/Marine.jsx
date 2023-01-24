@@ -9,7 +9,7 @@ export default function Marine() {
         <div className="rs-container">
           <div className="rs-topper">
             <h2 className="service-container-header tint-header rs-serv-header">
-              MARINE <span className="our-services">ACCESSORIES</span>
+              MARINE <span className="our-services">AUDIO</span>
             </h2>
 
             <span className="rs-description">

@@ -76,12 +76,12 @@ export default function AccessoryCard({ options }) {
         {/* <h2 className="remote-range">Price: ${price}</h2> */}
 
         <button onClick={showModel} className="remote-btn">
-          REQUEST BOOKING
+          REQUEST INFO
         </button>
 
         <Link onClick={scrollToTop} to={model}>
           <button onClick={toggleActiveProduct} className="remote-btn">
-            MORE INFO
+            READ MORE
           </button>
         </Link>
       </div>

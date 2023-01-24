@@ -86,7 +86,7 @@ export const marineProducts = [
         description: "",
       },
     ],
-    range: "Universal",
+    range: "Marine",
   },
   {
     app: false,
@@ -138,7 +138,7 @@ export const marineProducts = [
         description: "",
       },
     ],
-    range: "Universal",
+    range: "Marine",
   },
   {
     app: false,
@@ -179,7 +179,7 @@ export const marineProducts = [
         description: "",
       },
     ],
-    range: "Universal",
+    range: "Marine",
   },
   {
     app: false,
@@ -225,7 +225,7 @@ export const marineProducts = [
         description: "",
       },
     ],
-    range: "Universal",
+    range: "Marine",
   },
   {
     app: false,
@@ -267,7 +267,7 @@ export const marineProducts = [
         description: "",
       },
     ],
-    range: "Universal",
+    range: "Marine",
   },
   {
     app: false,
@@ -314,7 +314,7 @@ export const marineProducts = [
         description: "",
       },
     ],
-    range: "Universal",
+    range: "Marine",
   },
   {
     app: false,
@@ -361,6 +361,6 @@ export const marineProducts = [
         description: "",
       },
     ],
-    range: "Universal",
+    range: "Marine",
   },
 ];

@@ -11,6 +11,7 @@
   margin: 0 auto;
   position: relative;
   margin-top: 1rem;
+  padding-top: 0.3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -19,7 +20,7 @@
 }
 
 .model-name {
-  font-size: 1.4rem;
+  font-size: 1rem;
   color: rgb(133, 255, 62);
 }
 
@@ -56,7 +57,7 @@
 .main-product-img {
   margin: 0 auto;
   display: flex;
-  width: auto;
+  max-width: 22rem;
   max-height: 18rem;
 }
 

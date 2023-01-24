@@ -1,5 +1,6 @@
 import React from "react";
 import { FaClipboardList } from "react-icons/fa";
+import "./feat.styles.css";
 
 export default function Features({ product }) {
   const { features } = product;
