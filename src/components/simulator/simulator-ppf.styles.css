@@ -172,6 +172,7 @@
   .part-container {
     width: 100%;
     min-height: 1.2rem;
+    align-items: center;
   }
 
   .images-container {
@@ -186,6 +187,9 @@
     font-size: 0.8rem;
     width: 40%;
   }
+  .checkbox {
+    height: 1rem;
+  }
 
   .full-partial-container {
     width: auto;
@@ -195,6 +199,7 @@
 
   .fp-button {
     font-size: 0.8rem;
+    padding: 0.1rem 0.3rem;
   }
 
   .price-container {
