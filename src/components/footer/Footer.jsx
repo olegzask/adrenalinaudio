@@ -81,7 +81,7 @@ export const Footer = () => {
             <BsInstagram className="social-icon" />
           </a>
         </div>
-        <h3 className="oleg">Website by Oleg Zaskovets © 2022</h3>
+        <h3 className="oleg">Website by Oleg Zaskovets © 2023</h3>
       </div>
     </div>
   );
