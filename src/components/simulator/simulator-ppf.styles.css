@@ -133,7 +133,7 @@
   margin: 0;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 500px) {
   .simulator-ppf-container {
     width: 100%;
     flex-direction: column;
@@ -171,6 +171,7 @@
 
   .part-container {
     width: 100%;
+    min-height: 1.2rem;
   }
 
   .images-container {
@@ -182,7 +183,18 @@
   }
 
   .part-name {
-    font-size: 1.1rem;
+    font-size: 0.8rem;
+    width: 40%;
+  }
+
+  .full-partial-container {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .fp-button {
+    font-size: 0.8rem;
   }
 
   .price-container {

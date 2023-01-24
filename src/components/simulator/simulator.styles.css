@@ -61,7 +61,7 @@
   padding: 17px;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 500px) {
   .simulator-selector {
     position: relative;
     z-index: 1;
@@ -74,10 +74,10 @@
   }
 
   .simulator-ppf-header {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .simulator-tint-header {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
