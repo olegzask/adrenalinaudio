@@ -1,46 +1,82 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import ErrorWindow from "../errorWindow/ErrorWindow";
+import SuccessWindow from "../successWindow/SuccessWindow";
 import { BsArrowRight } from "react-icons/bs";
 import { FaArrowDown } from "react-icons/fa";
+import emailjs from "@emailjs/browser";
 import "./applicationcard.styles.css";
 
 export default function ApplicationCard({ opts }) {
   const { name, jobs } = opts;
   const [heh] = jobs;
   const { jobBen, jobReq, jobResp } = heh;
-
+  const [missing, setMissing] = useState();
   const [userInfo, setUserInfo] = useState({
     name: "",
     email: "",
     phone: "",
-    notes: "",
+    comments: "",
   });
+  const [errorBooking, setErrorBooking] = useState(false);
+  const [requestSent, setRequest] = useState(false);
 
-  const missingInfo = [];
+  const form = useRef();
 
   const updateUserInfo = (e) => {
     const value = e.target.value;
     setUserInfo({ ...userInfo, [e.target.name]: value });
   };
+  const clearFields = () => {
+    const nameInput = document.getElementById("name");
+    const emailInput = document.getElementById("email");
+    const phoneInput = document.getElementById("phone");
+    const commentsInput = document.getElementById("comments");
+    const resumeInput = document.getElementById("resume-file");
 
-  const sendApplication = (e) => {
+    nameInput.value = "";
+    emailInput.value = "";
+    phoneInput.value = "";
+    commentsInput.value = "";
+    resumeInput.value = "";
+
+    setUserInfo({ name: "", email: "", phone: "", comments: "" });
+  };
+
+  const sendEmail = (e) => {
     e.preventDefault();
-    const valuesArr = Object.entries(userInfo);
-    valuesArr.map((el) => {
-      if (!el[1]) {
-        missingInfo.push(el[0]);
+    fieldsChecker();
+  };
+
+  const fieldsChecker = () => {
+    const missingFields = [];
+    Object.entries(userInfo).map((el) => {
+      if (el[1] === "") {
+        missingFields.push(el[0]);
       }
     });
-    if (missingInfo.length < 1) {
-      alert("SENT!");
-      return;
+    if (missingFields.length === 0) {
+      emailjs
+        .sendForm(
+          "service_52hwkbv",
+          "template_6qijcwj",
+          form.current,
+          "EdFYBsAAe4ETIUbxP",
+          this
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+      setRequest(true);
+      clearFields();
+    } else {
+      setMissing(missingFields);
+      setErrorBooking(true);
     }
-    if (missingInfo.length > 0)
-      alert(
-        `Missing info: ${missingInfo.map(
-          (el) => el
-        )}. Please double check and try again!`
-      );
-    return;
   };
 
   const expandCard = (e) => {
@@ -63,6 +99,14 @@ export default function ApplicationCard({ opts }) {
 
   return (
     <div className="application-form-container">
+      {errorBooking ? (
+        <ErrorWindow fields={{ handler: setErrorBooking, info: missing }} />
+      ) : null}
+      {requestSent ? (
+        <SuccessWindow
+          fields={{ handler: setRequest, errHandler: setErrorBooking }}
+        />
+      ) : null}
       <div className="job-description-container">
         <div className="resp-container">
           <div className="header-cont">
@@ -104,38 +148,48 @@ export default function ApplicationCard({ opts }) {
           </ul>
         </div>
       </div>
-      <form autoComplete="off" className="job-form-container">
-        <span className="apply-header">
-          APPLYING FOR: {name ? name.toUpperCase() + " " + "POSITION" : null}
-        </span>
+      <form
+        ref={form}
+        onSubmit={sendEmail}
+        autoComplete="off"
+        className="job-form-container"
+      >
+        <label></label>
         <input
-          required
+          value={`${name.toUpperCase()} DEPARTMENT`}
+          id="position"
+          name="position"
+          className="application-input"
+          type="text"
+        />
+        <input
           onChange={updateUserInfo}
+          id="name"
           name="name"
           className="application-input"
           type="text"
           placeholder="FULL NAME"
         />
         <input
-          required
           onChange={updateUserInfo}
           name="email"
+          id="email"
           className="application-input"
           type="email"
           placeholder="EMAIL"
         />
         <input
-          required
           onChange={updateUserInfo}
           name="phone"
+          id="phone"
           className="application-input"
           type="number"
           placeholder="PHONE NUMBER"
         />
         <textarea
-          required
           onChange={updateUserInfo}
-          name="notes"
+          name="comments"
+          id="comments"
           className="user-notes"
           placeholder="Tell us something about yourself!"
         ></textarea>
@@ -143,10 +197,15 @@ export default function ApplicationCard({ opts }) {
           <span className="resume-header">
             Have a Resume? Attach it <BsArrowRight />
           </span>
-          <input id="resume-file" className="resume" type="file" />
+          <input
+            name="resume-file"
+            id="resume-file"
+            className="resume"
+            type="file"
+          />
         </div>
 
-        <button onClick={sendApplication} className="job-submit-btn">
+        <button onClick={fieldsChecker} className="job-submit-btn">
           SEND APPLICATION
         </button>
       </form>
