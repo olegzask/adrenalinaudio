@@ -68,7 +68,7 @@ export default function RemoteCard({ options }) {
 
         <Link to={model}>
           <button onClick={toggleActiveProduct} className="remote-btn">
-            READO MORE
+            READ MORE
           </button>
         </Link>
       </div>
