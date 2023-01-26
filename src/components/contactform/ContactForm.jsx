@@ -1,4 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import ErrorWindow from "../errorWindow/ErrorWindow";
+import SuccessWindow from "../successWindow/SuccessWindow";
+import emailjs from "@emailjs/browser";
 import "./contactform.styles.css";
 
 export const ContactForm = () => {
@@ -8,6 +11,16 @@ export const ContactForm = () => {
     phone: "",
     comments: "",
   });
+  const [missing, setMissing] = useState();
+  const [error, setError] = useState(false);
+  const [requestSent, setRequest] = useState(false);
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    fieldsChecker();
+  };
 
   const fieldsChecker = () => {
     const missingFields = [];
@@ -17,14 +30,26 @@ export const ContactForm = () => {
       }
     });
     if (missingFields.length === 0) {
-      alert("Your Request is submitted! ");
+      emailjs
+        .sendForm(
+          "service_52hwkbv",
+          "template_6qijcwj",
+          form.current,
+          "EdFYBsAAe4ETIUbxP"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+      setRequest(true);
       clearFields();
     } else {
-      alert(
-        `Following fields are missing: ${missingFields.map(
-          (el) => el
-        )}. Please check.`
-      );
+      setMissing(missingFields);
+      setError(true);
     }
   };
 
@@ -58,44 +83,50 @@ export const ContactForm = () => {
       <h3 className="contactform-header-two">
         Coffee, tea, or something stronger...
       </h3>
-      <input
-        autoComplete="off"
-        id="name"
-        onChange={handleChange}
-        className="form-input"
-        type="text"
-        name="name"
-        placeholder="Your name"
-      />
-      <input
-        autoComplete="off"
-        id="email"
-        onChange={handleChange}
-        className="form-input"
-        type="email"
-        name="email"
-        placeholder="Your email"
-      />
-      <input
-        autoComplete="off"
-        id="phone"
-        onChange={handleChange}
-        className="form-input"
-        type="number"
-        name="phone"
-        placeholder="Your phone number"
-      />
-      <textarea
-        autoComplete="off"
-        id="comments"
-        onChange={handleChange}
-        className="form-comment"
-        name="comments"
-        placeholder="How can we help?"
-      ></textarea>
-      <button className="submit-request" onClick={submitRequest}>
-        SUBMIT REQUEST
-      </button>
+      {error ? (
+        <ErrorWindow fields={{ handler: setError, info: missing }} />
+      ) : null}
+      {requestSent ? (
+        <SuccessWindow fields={{ handler: setRequest, errHandler: setError }} />
+      ) : null}
+      <form className="contact-form-main" ref={form} onSubmit={sendEmail}>
+        <input
+          autoComplete="off"
+          id="name"
+          onChange={handleChange}
+          className="form-input"
+          type="text"
+          name="name"
+          placeholder="Your name"
+        />
+        <input
+          autoComplete="off"
+          id="email"
+          onChange={handleChange}
+          className="form-input"
+          type="email"
+          name="email"
+          placeholder="Your email"
+        />
+        <input
+          autoComplete="off"
+          id="phone"
+          onChange={handleChange}
+          className="form-input"
+          type="number"
+          name="phone"
+          placeholder="Your phone number"
+        />
+        <textarea
+          autoComplete="off"
+          id="comments"
+          onChange={handleChange}
+          className="form-comment"
+          name="comments"
+          placeholder="How can we help?"
+        ></textarea>
+        <button className="submit-request">SUBMIT REQUEST</button>
+      </form>
     </div>
   );
 };

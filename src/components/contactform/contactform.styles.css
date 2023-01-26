@@ -7,6 +7,12 @@
   border-top: 0.5rem solid rgb(133, 255, 62);
 }
 
+.contact-form-main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
 .contactform-header {
   margin: 0;
   margin-top: 1.5rem;
@@ -20,6 +26,7 @@
 }
 
 .form-input {
+  width: 98%;
   height: 2rem;
   font-size: 1rem;
   border-radius: 0.2rem;
@@ -31,6 +38,7 @@
 }
 
 .form-comment {
+  width: 98%;
   height: 5rem;
   resize: none;
   border-radius: 0.2rem;
@@ -44,6 +52,8 @@
 }
 
 .submit-request {
+  width: 100%;
+  margin-top: 0.2rem;
   cursor: pointer;
   font-family: "Lato";
   font-size: 1.1rem;
