@@ -22,7 +22,7 @@ export default function SuccessWindow({ fields }) {
           </h2>
         </div>
       </div>
-      <button onClick={closeWindow} className="close-error">
+      <button onClick={closeWindow} className="close-succ">
         GO BACK
       </button>
     </div>
