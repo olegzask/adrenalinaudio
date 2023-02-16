@@ -29,12 +29,18 @@ export const Navbar = () => {
   };
 
   const goToServices = (e) => {
-    const servicesEl = document.getElementById("huevo");
-    servicesEl.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-      inline: "center",
-    });
+    setTimeout(
+      () => {
+        const servicesEl = document.getElementById("huevo");
+        servicesEl.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "center",
+        });
+      },
+
+      100
+    );
   };
 
   return (
@@ -48,7 +54,7 @@ export const Navbar = () => {
           <Link onClick={scrollToTop} className="nav-link" to="/about">
             About
           </Link>
-          <Link onClick={goToServices} className="nav-link">
+          <Link onClick={goToServices} className="nav-link" to="/">
             Services
           </Link>
           {/* <Link onClick={scrollToTop} className="nav-link" to="/news">
