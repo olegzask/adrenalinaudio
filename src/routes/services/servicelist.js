@@ -27,7 +27,7 @@ export const services = [
     name: "Car Audio / Video",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada dignissim velit a tincidunt. Fusce vel mi eget diam viverra laoreet sed sit amet dolor.",
-    image: "images/services-images/car_audio.jpg",
+    image: "images/audio-video/DMH-1700NEX/DMH1700NEX_1.jpg",
     link: "services/car-audio-video",
   },
   {
