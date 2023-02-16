@@ -1,146 +1,233 @@
-@media screen and (max-width: 500px) {
-  .rs-main-container {
-    width: 100%;
-    margin-bottom: 6rem;
-  }
+.rs-main-container {
+  width: 100%;
+  margin-bottom: 6rem;
+}
 
-  .rs-container {
-    margin: 0 auto;
-    width: 90%;
-    position: relative;
-    top: 5rem;
-  }
+.rs-container {
+  margin: 0 auto;
+  width: 90%;
+  position: relative;
+  top: 5rem;
+}
 
+.rs-serv-header {
+  font-size: 2.5rem;
+}
+
+.rs-description-lower {
+  margin: 0;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.remote-card-container {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 0.4rem solid rgb(133, 255, 62);
+}
+
+.rs-topper {
+  margin: 0;
+  margin-bottom: 1.2rem;
+  width: 100%;
+  text-align: center;
+}
+
+.quick-links {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: auto;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+.quick-link {
+  padding: 0;
+  width: 3.1rem;
+  margin: 0;
+  cursor: pointer;
+  font-size: 0.7rem;
+  height: 1.5rem;
+  background-color: white;
+  border: 0.1rem solid rgb(187, 186, 186);
+  border-radius: 0.2rem;
+  color: black;
+}
+
+.quick-link:focus {
+  background-color: rgb(133, 255, 62);
+  outline: none;
+  border: 0.1rem solid transparent;
+}
+
+.quick-link:active {
+  transition: 0.1s;
+  background-color: rgb(87, 202, 21);
+}
+
+.quick-link:hover {
+  transition: 0.3s;
+  border: 0.1rem solid rgb(133, 255, 62);
+}
+
+.ql-hdr {
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  font-size: 1.6rem;
+}
+
+.ql {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.model-range-container {
+  margin: 0;
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-logo {
+  margin: 0;
+  margin-top: 0.2rem;
+  height: 0.7rem;
+}
+
+.top-logos-container {
+  margin: 0;
+  padding: 0.3rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.model {
+  color: rgb(133, 255, 62);
+}
+
+.remote-model {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.remote-range {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.3rem;
+  background-color: rgb(133, 255, 62);
+}
+
+.img-feat-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.feat-container {
+  padding-left: 1rem;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  align-items: flex-start;
+  border-left: 0.1rem solid rgb(187, 186, 186);
+}
+
+.feature {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.remote-img {
+  width: 40%;
+}
+
+.links-container {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.remote-btn {
+  cursor: pointer;
+  background-color: white;
+  border: 0.1rem solid rgb(187, 186, 186);
+  padding: 0.25rem 0.5rem;
+  font-weight: 400;
+  color: black;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+}
+
+.remote-btn:hover {
+  transition: 0.3s;
+  background-color: rgb(133, 255, 62);
+  border: 0.1rem solid rgb(133, 255, 62);
+}
+
+@media (min-width: 1000px) {
   .rs-serv-header {
-    font-size: 2.5rem;
-  }
-
-  .rs-description-lower {
-    margin: 0;
-    font-size: 1rem;
-    margin-bottom: 2rem;
     margin-top: 2rem;
-    width: 100%;
+    font-size: 3rem;
   }
-
-  .remote-card-container {
-    margin: 0 auto;
-    width: 100%;
+  .ql {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    border-top: 0.4rem solid rgb(133, 255, 62);
-  }
-
-  .rs-topper {
-    margin: 0;
-    margin-bottom: 1.2rem;
-    width: 100%;
-    text-align: center;
-  }
-
-  .quick-links {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: auto;
-    margin-bottom: 0.5rem;
+    gap: 2rem;
     margin-top: 1rem;
   }
 
+  .quick-links {
+    margin-top: 2rem;
+  }
   .quick-link {
-    padding: 0;
-    width: 3.1rem;
-    margin: 0;
-    cursor: pointer;
-    font-size: 0.7rem;
-    height: 1.5rem;
-    background-color: white;
-    border: 0.1rem solid rgb(187, 186, 186);
-    border-radius: 0.2rem;
-    color: black;
-  }
-
-  .quick-link:focus {
-    background-color: rgb(133, 255, 62);
-    outline: none;
-    border: 0.1rem solid transparent;
-  }
-
-  .quick-link:active {
-    transition: 0.1s;
-    background-color: rgb(87, 202, 21);
-  }
-
-  .quick-link:hover {
-    transition: 0.3s;
-    border: 0.1rem solid rgb(133, 255, 62);
-  }
-
-  .ql-hdr {
-    margin: 0 auto;
-    margin-bottom: 0.5rem;
-    width: 100%;
-    font-size: 1.6rem;
-  }
-
-  .ql {
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-  }
-
-  .model-range-container {
-    margin: 0;
-    padding: 0.5rem 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .brand-logo {
-    margin: 0;
-    margin-top: 0.2rem;
-    height: 0.7rem;
-  }
-
-  .top-logos-container {
-    margin: 0;
-    padding: 0.3rem 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .model {
-    color: rgb(133, 255, 62);
-  }
-
-  .remote-model {
-    margin: 0;
-    font-size: 1.1rem;
-  }
-
-  .remote-range {
-    margin: 0;
+    width: 4.5rem;
     font-size: 1rem;
-    font-weight: 400;
-    padding: 0.3rem 0.5rem;
-    border-radius: 0.3rem;
-    background-color: rgb(133, 255, 62);
   }
 
   .img-feat-container {
+    width: 100%;
     display: flex;
-    gap: 1rem;
-    align-items: center;
+    justify-content: space-between;
+  }
+
+  .remote-img {
+    width: 40%;
+  }
+
+  .brand-logo {
+    height: 1.2rem;
+  }
+
+  .remote-card-container {
+    width: 70%;
   }
 
   .feat-container {
     padding-left: 1rem;
-    width: 60%;
+    width: 30%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -150,41 +237,9 @@
   }
 
   .feature {
-    margin: 0;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 0.8rem;
-  }
-
-  .remote-img {
-    width: 40%;
-  }
-
-  .links-container {
-    width: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    align-items: center;
-  }
-
-  .remote-btn {
-    cursor: pointer;
-    background-color: white;
-    border: 0.1rem solid rgb(187, 186, 186);
-    padding: 0.25rem 0.5rem;
+    font-size: 1.5rem;
     font-weight: 400;
-    color: black;
-    border-radius: 0.3rem;
-    font-size: 1rem;
-  }
-
-  .remote-btn:hover {
-    transition: 0.3s;
-    background-color: rgb(133, 255, 62);
-    border: 0.1rem solid rgb(133, 255, 62);
+    width: 100%;
+    gap: 1.2rem;
   }
 }

@@ -26,3 +26,12 @@
 .ctc {
   width: 100%;
 }
+
+@media (min-width: 1000px) {
+  .about-top-text {
+    font-size: 1.6rem;
+  }
+  .about-bottom-text {
+    font-size: 1.3rem;
+  }
+}

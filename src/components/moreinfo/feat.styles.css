@@ -1,3 +1,18 @@
 .product-features-container {
   align-items: center;
 }
+
+@media (min-width: 1000px) {
+  .features-container {
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 3rem;
+  }
+
+  .feat-left-side {
+    width: 30%;
+  }
+  .feature {
+    font-size: 1.5rem;
+  }
+}

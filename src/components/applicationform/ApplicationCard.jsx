@@ -168,7 +168,7 @@ export default function ApplicationCard({ opts }) {
           name="name"
           className="application-input"
           type="text"
-          placeholder="FULL NAME"
+          placeholder="Full Name"
         />
         <input
           onChange={updateUserInfo}
@@ -176,7 +176,7 @@ export default function ApplicationCard({ opts }) {
           id="email"
           className="application-input"
           type="email"
-          placeholder="EMAIL"
+          placeholder="Email"
         />
         <input
           onChange={updateUserInfo}
@@ -184,7 +184,7 @@ export default function ApplicationCard({ opts }) {
           id="phone"
           className="application-input"
           type="number"
-          placeholder="PHONE NUMBER"
+          placeholder="Phone Number"
         />
         <textarea
           onChange={updateUserInfo}

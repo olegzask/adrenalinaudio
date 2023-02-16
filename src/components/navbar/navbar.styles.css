@@ -83,3 +83,20 @@
     height: 4.5rem;
   }
 }
+
+@media (min-width: 1000px) {
+  .navbar {
+    height: 5rem;
+  }
+
+  .navlinks-cont {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .nav-link {
+    font-size: 1.1rem;
+  }
+}

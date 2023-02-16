@@ -117,3 +117,28 @@
   font-weight: 400;
   color: rgb(83, 83, 83);
 }
+
+@media (min-width: 1000px) {
+  .direct-contact-container {
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  .have-question {
+    font-size: 2rem;
+  }
+  .ask-us-anything {
+    font-size: 2rem;
+  }
+
+  .footer-links-container {
+    justify-content: space-between;
+  }
+
+  .footer-link {
+    margin: 0;
+  }
+
+  .footer-address {
+    font-size: 1.2rem;
+  }
+}

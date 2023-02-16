@@ -192,3 +192,46 @@
   border: none;
   border-radius: 0.2rem;
 }
+
+@media (min-width: 1000px) {
+  .model-name {
+    font-size: 1.5rem;
+  }
+
+  .info-btn {
+    font-size: 1.2rem;
+  }
+
+  .description-point {
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 0.5rem;
+  }
+
+  .product-img {
+    cursor: pointer;
+  }
+
+  .app-header {
+    font-size: 1.5rem;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .apple-google-stores-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .appstore {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+  }
+
+  .store-img {
+    width: 25%;
+  }
+}

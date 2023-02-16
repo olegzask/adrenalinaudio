@@ -10,7 +10,7 @@
   width: 100%;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 500px) {
   .main-video {
     width: auto;
     height: 78vh;

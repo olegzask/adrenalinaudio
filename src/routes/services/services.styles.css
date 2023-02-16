@@ -17,3 +17,9 @@
 .our-services {
   font-weight: 800;
 }
+
+@media (min-width: 1000px) {
+  .service-container-header {
+    font-size: 4rem;
+  }
+}

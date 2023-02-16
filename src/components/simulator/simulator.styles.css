@@ -11,7 +11,7 @@
 
 .simulator-selector {
   display: flex;
-  margin-bottom: 1rem;
+  margin-bottom: rem;
   width: 100%;
   height: auto;
   flex-direction: row;
@@ -19,7 +19,8 @@
   color: white;
   text-align: center;
   position: relative;
-  z-index: -1;
+  z-index: 1;
+  top: 0.5rem;
 }
 
 .decider {

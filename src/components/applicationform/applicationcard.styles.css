@@ -184,3 +184,27 @@ input:focus {
 .blacked {
   color: rgb(41, 41, 41);
 }
+
+@media (min-width: 1000px) {
+  .application-input {
+    height: 2rem;
+    font-size: 1rem;
+  }
+
+  .user-notes {
+    height: 7rem;
+  }
+
+  .resume-container {
+    margin: 0;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .resume {
+    width: 30%;
+  }
+  .resume-header {
+    width: 25%;
+    font-size: 1rem;
+  }
+}

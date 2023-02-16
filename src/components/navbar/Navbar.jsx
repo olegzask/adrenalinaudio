@@ -28,28 +28,40 @@ export const Navbar = () => {
     } else menu.classList.remove("hide");
   };
 
+  const goToServices = (e) => {
+    const servicesEl = document.getElementById("huevo");
+    servicesEl.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "center",
+    });
+  };
+
   return (
     <div className="navbar-container">
       {path === "/" ? <PowerWall /> : null}
       <div className={`navbar ${offset > 50 && "scrolled"}`}>
-        <Link onClick={scrollToTop} to="/">
-          <FaPowerOff className="navbar-logo" />
-        </Link>
-        <Link onClick={scrollToTop} className="nav-link" to="/about">
-          About
-        </Link>
-        <Link onClick={scrollToTop} className="nav-link" to="/services">
-          Services
-        </Link>
-        <Link onClick={scrollToTop} className="nav-link" to="/news">
-          News
-        </Link>
-        <Link onClick={scrollToTop} className="nav-link" to="/careers">
-          Careers
-        </Link>
-        <Link onClick={scrollToTop} className="nav-link" to="/contact">
-          Contact
-        </Link>
+        <div className="navlinks-cont">
+          <Link onClick={scrollToTop} to="/">
+            <FaPowerOff className="navbar-logo" />
+          </Link>
+          <Link onClick={scrollToTop} className="nav-link" to="/about">
+            About
+          </Link>
+          <Link onClick={goToServices} className="nav-link">
+            Services
+          </Link>
+          {/* <Link onClick={scrollToTop} className="nav-link" to="/news">
+            News
+          </Link> */}
+          <Link onClick={scrollToTop} className="nav-link" to="/careers">
+            Careers
+          </Link>
+          <Link onClick={scrollToTop} className="nav-link" to="/contact">
+            Contact
+          </Link>
+        </div>
+
         <div className="hamb-menu-container">
           <HiMenuAlt3 onClick={hideMenu} id="hamb-menu-icon" />
         </div>

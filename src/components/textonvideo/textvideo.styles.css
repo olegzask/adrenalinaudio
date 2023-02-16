@@ -46,3 +46,23 @@
   transition: 0.3s ease-in-out;
   color: rgb(96, 197, 37);
 }
+
+.text-main {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 1000px) {
+  .text-top {
+    font-size: 4rem;
+    gap: 1rem;
+  }
+
+  .text-on-video {
+    left: 3rem;
+    top: 10rem;
+  }
+
+  .text-main {
+    font-size: 2rem;
+  }
+}

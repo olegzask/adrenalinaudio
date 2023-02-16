@@ -26,3 +26,13 @@
   flex-direction: column;
   gap: 0.6rem;
 }
+
+@media (min-width: 1000px) {
+  .about-page-container {
+    top: 7rem;
+    padding-bottom: 2rem;
+  }
+  .abt-header {
+    font-size: 2rem;
+  }
+}
